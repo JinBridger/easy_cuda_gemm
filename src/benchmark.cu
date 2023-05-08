@@ -96,9 +96,9 @@ void gflops_benchmark(unsigned int size, bool is_baseline) {
     double flops_per_matmul = 2.0 * size * size * size;
     double avg_gflops       = (flops_per_matmul * 1.0e-9f) / (avg_time / 1000.0f);
 
-    std::cout << "Size: " << size << "\t";
-    std::cout << "GFLOPS: " << avg_gflops << "\t";
-    std::cout << "Time: " << avg_time << std::endl;
+    std::cout << size << ", ";
+    std::cout << avg_gflops << ", ";
+    std::cout << avg_time << std::endl;
 
     cudaFree(( void* )device_mat_A);
     cudaFree(( void* )device_mat_B);
