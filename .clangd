@@ -1,0 +1,9 @@
+CompileFlags:
+  Add:
+    - -std=c++14
+    - --cuda-path=C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.0
+    - --cuda-gpu-arch=sm_52
+    - -LC:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.0\lib\x64
+    - -IC:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.0\include
+    - -IC:\Users\26354\Documents\easy_cuda_gemm\include
+  Remove: [-rdc=true, -forward-unknown-to-host-compiler]
